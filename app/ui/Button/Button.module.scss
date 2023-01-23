@@ -1,0 +1,5 @@
+.button {
+	@apply text-[20px] leading-[24px] inline-block box-border text-center text-primary rounded-layout px-[32px] py-[24px] hover:text-lightPrimary transition-all duration-[0.3s] active:text-white disabled:opacity-[0.4];
+	background: linear-gradient(180deg, #1ff2ff 0%, #27f9e5 52.66%, #2fffcd 100%);
+	font-family: 'Inter', sans-serif;
+}

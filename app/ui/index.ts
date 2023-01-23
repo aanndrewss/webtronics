@@ -1,1 +1,5 @@
 export * from './Meta/Meta'
+export * from './Htag/Htag'
+export * from './Paragraph/Paragraph'
+export * from './Button/Button'
+export * from './Input/Input'

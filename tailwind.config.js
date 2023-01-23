@@ -18,6 +18,9 @@ module.exports = {
 				errorColor,
 				borderColor,
 				textColor
+			},
+			borderRadius: {
+				layout: '8px'
 			}
 		}
 	},
