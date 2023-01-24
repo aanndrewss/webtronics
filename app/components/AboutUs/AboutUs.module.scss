@@ -1,0 +1,15 @@
+.gridTemplate {
+	@apply grid grid-cols-[1fr_1fr] mt-[56px];
+	.mentorsWrapper {
+		@apply flex flex-col;
+		.heading {
+			@apply text-center;
+		}
+		.mentors {
+			@apply flex flex-row;
+		}
+	}
+	.description {
+		@apply self-center max-w-[486px];
+	}
+}

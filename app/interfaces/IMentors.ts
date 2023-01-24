@@ -1,6 +1,6 @@
 export interface IMentors {
 	id: number
 	name: string
-	img: string
+	imgPath: string
 	description: string
 }

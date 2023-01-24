@@ -15,21 +15,27 @@ export const getStaticProps = async () => {
 		const links = await axios
 			.get(`${process.env.API_HOST}/links`)
 			.then(({ data }) => data)
-		if (!links) {
+		const mentors = await axios
+			.get(`${process.env.API_HOST}/mentors`)
+			.then(({ data }) => data)
+
+		if (!links && !mentors) {
 			return {
 				notFound: true
 			}
 		}
 		return {
 			props: {
-				links: links
+				links: links,
+				mentors: mentors
 			},
 			revalidate: 60
 		}
 	} catch {
 		return {
 			props: {
-				links: null
+				links: null,
+				mentors: null
 			}
 		}
 	}

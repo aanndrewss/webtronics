@@ -1,0 +1,13 @@
+.mentor {
+	@apply flex flex-col items-start gap-[4px];
+	.mentorImg {
+		@apply rounded-full mb-[16px] p-[2px];
+		background-image: linear-gradient(
+			152.14deg,
+			rgba(21, 191, 253, 0.7) 9.96%,
+			rgba(156, 55, 253, 0.7) 100%
+		);
+		background-origin: border-box;
+		background-clip: padding-box, border-box;
+	}
+}
