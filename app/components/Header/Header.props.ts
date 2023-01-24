@@ -1,5 +1,5 @@
 import { INavLinks } from '@/app/interfaces/INavLinks'
 
-export interface HeaderComponentProps {
+export interface HeaderProps {
 	links: INavLinks[]
 }

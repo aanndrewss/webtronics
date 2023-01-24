@@ -1,0 +1,18 @@
+.gridTemplate {
+	@apply grid grid-cols-[auto_auto_360px] items-center gap-x-[24px] mt-[116px];
+	.first {
+		@apply col-start-1 col-end-3;
+	}
+	.second {
+		@apply col-start-3 col-end-4;
+	}
+	.third {
+		@apply col-start-1 col-end-2;
+	}
+	.fourth {
+		@apply col-start-2 col-end-4;
+	}
+	.fifth {
+		@apply col-start-3 col-end-4 justify-self-end;
+	}
+}

@@ -1,13 +1,11 @@
 import React from 'react'
 import Logo from './logo.svg'
-import styles from './HeaderComponent.module.scss'
-import { HeaderComponentProps } from './HeaderComponent.props'
+import styles from './Header.module.scss'
+import { HeaderProps } from './Header.props'
 import { HeaderLink } from './HeaderLink/HeaderLink'
 import { INavLinks } from '@/app/interfaces/INavLinks'
 
-export const HeaderComponent = ({
-	links
-}: HeaderComponentProps): JSX.Element => {
+export const Header = ({ links }: HeaderProps): JSX.Element => {
 	return (
 		<header className={styles.header}>
 			<Logo />
