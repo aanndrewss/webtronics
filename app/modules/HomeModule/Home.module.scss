@@ -1,6 +1,7 @@
 .heroblock {
-	@apply bg-cover min-h-[100vh] px-[40px];
+	@apply bg-cover min-h-[100vh] px-[40px] shadow-[inset_0_-30px_60px_70px_rgba(12,16,45,1)];
 	background-image: url('../../../public/images/programmer-working.png');
+
 	.wrapper {
 		@apply max-w-[1213px] m-auto w-full;
 	}

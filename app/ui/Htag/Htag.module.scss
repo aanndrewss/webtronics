@@ -1,16 +1,16 @@
-.h1 {
-	@apply m-0 text-[150px] font-semibold leading-[180px];
+.h {
 	font-family: 'Clash Display', sans-serif;
+	@apply m-0;
+}
+.h1 {
+	@apply text-[150px] font-semibold leading-[180px];
 }
 .h2 {
-	@apply m-0 text-[72px] font-semibold leading-[86px];
-	font-family: 'Clash Display', sans-serif;
+	@apply text-[72px] font-semibold leading-[86px];
 }
 .h3 {
-	@apply m-0 text-[32px] font-semibold leading-[38px];
-	font-family: 'Clash Display', sans-serif;
+	@apply text-[32px] font-semibold leading-[38px];
 }
 .h4 {
-	@apply m-0 text-[24px] font-semibold leading-[29px];
-	font-family: 'Clash Display', sans-serif;
+	@apply text-[24px] font-semibold leading-[29px];
 }

@@ -4,8 +4,9 @@ import { Meta } from '../../ui'
 import { IData } from '../../interfaces/IData'
 import styles from './Home.module.scss'
 import { Heading } from '@/app/components/Heading/Heading'
+import { AboutUs } from '@/app/components/AboutUs/AboutUs'
 
-export const HomeModule = ({ links }: IData): JSX.Element => {
+export const HomeModule = ({ links, mentors }: IData): JSX.Element => {
 	return (
 		<>
 			<Meta title="Webtronics | Courses" description="The best courses" />
@@ -13,6 +14,7 @@ export const HomeModule = ({ links }: IData): JSX.Element => {
 				<div className={styles.wrapper}>
 					<Header links={links} />
 					<Heading />
+					<AboutUs mentors={mentors} />
 				</div>
 			</div>
 		</>
