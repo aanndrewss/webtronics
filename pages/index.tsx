@@ -1,14 +1,36 @@
-import { Button, Htag, Input, Meta, Paragraph } from '@/app/ui'
-import styles from '@/styles/Home.module.scss'
+import { HomeModule } from '@/app/modules/HomeModule/HomeModule'
+import { IData } from '@/app/interfaces/IData'
+import axios from 'axios'
 
-export default function Home() {
+export default function Home(props: IData) {
 	return (
 		<>
-			<Meta title="Webtronics | Courses" description="The best courses" />
-			<Htag tag="h3">aasd</Htag>
-			<Paragraph size="m">asdawdaw</Paragraph>
-			<Button>text</Button>
-			<Input placeholder="Name" />
+			<HomeModule {...props} />
 		</>
 	)
+}
+
+export const getStaticProps = async () => {
+	try {
+		const links = await axios
+			.get(`${process.env.API_HOST}/links`)
+			.then(({ data }) => data)
+		if (!links) {
+			return {
+				notFound: true
+			}
+		}
+		return {
+			props: {
+				links: links
+			},
+			revalidate: 60
+		}
+	} catch {
+		return {
+			props: {
+				links: null
+			}
+		}
+	}
 }
