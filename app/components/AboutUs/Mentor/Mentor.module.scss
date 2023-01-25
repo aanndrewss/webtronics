@@ -1,5 +1,8 @@
 .mentor {
 	@apply flex flex-col items-start gap-[4px];
+	&:nth-child(2) {
+		@apply mt-[-50px];
+	}
 	.mentorImg {
 		@apply rounded-full mb-[16px] p-[2px];
 		background-image: linear-gradient(

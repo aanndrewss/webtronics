@@ -1,15 +1,18 @@
 .gridTemplate {
-	@apply grid grid-cols-[1fr_1fr] mt-[56px];
+	@apply grid grid-cols-[1fr_1fr_auto] grid-rows-[1fr_1fr] mt-[56px] gap-x-[15px];
 	.mentorsWrapper {
-		@apply flex flex-col;
+		@apply flex flex-col items-center col-start-1 col-end-2 row-start-1 row-end-3;
 		.heading {
 			@apply text-center;
 		}
 		.mentors {
-			@apply flex flex-row;
+			@apply flex flex-row gap-[20px];
 		}
 	}
 	.description {
-		@apply self-center max-w-[486px];
+		@apply self-center max-w-[486px] col-start-2 col-end-3 row-start-1 row-end-2;
+	}
+	.front {
+		@apply row-start-2 row-end-3 col-start-2 col-end-4 self-end ml-[120px];
 	}
 }

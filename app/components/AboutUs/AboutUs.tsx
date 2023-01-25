@@ -4,6 +4,8 @@ import styles from './AboutUs.module.scss'
 import { IMentors } from '@/app/interfaces/IMentors'
 import { Mentor } from './Mentor/Mentor'
 import { Htag, Paragraph } from '@/app/ui'
+import Line from './line.svg'
+import Front from './front.svg'
 
 export const AboutUs = ({ mentors }: AboutUsProps): JSX.Element => {
 	return (
@@ -12,6 +14,7 @@ export const AboutUs = ({ mentors }: AboutUsProps): JSX.Element => {
 				<Htag className={styles.heading} tag="h3">
 					Mentors
 				</Htag>
+				<Line />
 				<div className={styles.mentors}>
 					{mentors.map((m: IMentors) => (
 						<Mentor key={m.id} mentor={m} />
@@ -24,6 +27,7 @@ export const AboutUs = ({ mentors }: AboutUsProps): JSX.Element => {
 				only the necessary languages and technologies, but how to think like a
 				front-end engineer, too.
 			</Paragraph>
+			<Front className={styles.front} />
 		</div>
 	)
 }
