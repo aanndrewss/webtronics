@@ -2,10 +2,10 @@ import React from 'react'
 import { Meta } from '../../ui'
 import { IData } from '../../interfaces/IData'
 import styles from './Home.module.scss'
-import { AboutUs, HeroBlock } from '@/app/components'
+import { AboutUs, HeroBlock, Tech } from '@/app/components'
 
-const HomeModule = ({ links, mentors }: IData) => {
-	if (!links && !mentors) {
+const HomeModule = ({ links, mentors, technologies }: IData) => {
+	if (!links && !mentors && !technologies) {
 		return null
 	}
 
@@ -15,6 +15,7 @@ const HomeModule = ({ links, mentors }: IData) => {
 			<HeroBlock links={links} />
 			<div className={styles.wrapper}>
 				<AboutUs mentors={mentors} />
+				<Tech technologies={technologies} />
 			</div>
 		</>
 	)

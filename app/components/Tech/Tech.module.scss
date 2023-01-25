@@ -1,0 +1,12 @@
+.wrapper {
+	@apply flex flex-col items-center justify-center mt-[180px];
+	.heading {
+		@apply max-w-[543px] text-center;
+	}
+	.description {
+		@apply max-w-[472px] text-center mt-[16px];
+	}
+	.technologies {
+		@apply grid grid-cols-4 mt-[54px] gap-x-[24px];
+	}
+}

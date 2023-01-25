@@ -5,7 +5,7 @@ import styles from './HeaderLink.module.scss'
 
 export const HeaderLink = ({ name }: HeaderLinkProps) => {
 	return (
-		<a href="#" className={styles.link}>
+		<a href={'#' + name} className={styles.link}>
 			<Paragraph>{name}</Paragraph>
 		</a>
 	)
