@@ -8,7 +8,9 @@ import { INavLinks } from '@/app/interfaces/INavLinks'
 export const Header = ({ links }: HeaderProps): JSX.Element => {
 	return (
 		<header className={styles.header}>
-			<Logo />
+			<a href="#" className={styles.logo}>
+				<Logo />
+			</a>
 			<nav className={styles.nav}>
 				{links.map((l: INavLinks) => (
 					<HeaderLink key={l.id} name={l.name} />

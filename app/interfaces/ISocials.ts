@@ -1,6 +1,5 @@
-export interface ITech {
+export interface ISocials {
 	id: number
 	name: string
 	iconPath: string
-	link: string
 }

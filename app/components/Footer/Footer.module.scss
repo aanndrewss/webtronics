@@ -1,0 +1,35 @@
+.bg {
+	@apply border-t-2 border-double border-transparent mt-[150px] px-[40px];
+	background-image: linear-gradient(#0f1438, #0f1438),
+		linear-gradient(
+			152.14deg,
+			rgba(21, 191, 253, 0.7) 9.96%,
+			rgba(156, 55, 253, 0.7) 100%
+		);
+	background-origin: border-box;
+	background-clip: padding-box, border-box;
+	.wrapper {
+		@apply max-w-[1213px] m-auto w-full py-[35px] grid grid-cols-3 gap-x-[160px];
+		.logoInfo {
+			@apply flex flex-col items-start gap-[24px];
+			.logo {
+				@apply hover:opacity-60 transition-all duration-[0.2s];
+			}
+			.description {
+				@apply max-w-[231px];
+			}
+		}
+		.company {
+			@apply grid grid-cols-2 gap-y-[16px] gap-x-[140px];
+			.headingCompany {
+				@apply col-start-1 col-end-3 mb-[8px];
+			}
+		}
+		.socials {
+			@apply grid grid-cols-[24px_24px_24px_24px] gap-[24px] grid-rows-[22px_auto];
+			.headingSocials {
+				@apply col-start-1 col-end-5;
+			}
+		}
+	}
+}

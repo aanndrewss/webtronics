@@ -5,22 +5,26 @@ const technologies = [
 	{
 		id: 1,
 		name: 'Angular',
-		iconPath: '/icons/angular.svg'
+		iconPath: '/icons/angular.svg',
+		link: 'https://angular.io/'
 	},
 	{
 		id: 2,
 		name: 'React',
-		iconPath: '/icons/react.svg'
+		iconPath: '/icons/react.svg',
+		link: 'https://ru.reactjs.org/'
 	},
 	{
 		id: 3,
 		name: 'Vue',
-		iconPath: '/icons/vue.svg'
+		iconPath: '/icons/vue.svg',
+		link: 'https://vuejs.org/'
 	},
 	{
 		id: 4,
 		name: 'JavaScript',
-		iconPath: '/icons/js.svg'
+		iconPath: '/icons/js.svg',
+		link: 'https://developer.mozilla.org/ru/docs/Web/JavaScript'
 	}
 ]
 
