@@ -5,6 +5,10 @@ import styles from './Home.module.scss'
 import { AboutUs, HeroBlock } from '@/app/components'
 
 export const HomeModule = ({ links, mentors }: IData): JSX.Element => {
+	if (!links && !mentors) {
+		return null!
+	}
+
 	return (
 		<>
 			<Meta title="Webtronics | Courses" description="The best courses" />
