@@ -6,7 +6,7 @@ import { AboutUs, HeroBlock } from '@/app/components'
 
 export const HomeModule = ({ links, mentors }: IData): JSX.Element => {
 	if (!links && !mentors) {
-		return null
+		return null!
 	}
 
 	return (
