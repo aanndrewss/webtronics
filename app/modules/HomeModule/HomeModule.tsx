@@ -4,9 +4,9 @@ import { IData } from '../../interfaces/IData'
 import styles from './Home.module.scss'
 import { AboutUs, HeroBlock } from '@/app/components'
 
-export const HomeModule = ({ links, mentors }: IData): JSX.Element => {
+const HomeModule = ({ links, mentors }: IData) => {
 	if (!links && !mentors) {
-		return null!
+		return null
 	}
 
 	return (
@@ -19,3 +19,5 @@ export const HomeModule = ({ links, mentors }: IData): JSX.Element => {
 		</>
 	)
 }
+
+export default HomeModule

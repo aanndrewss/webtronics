@@ -1,4 +1,4 @@
-import { HomeModule } from '@/app/modules/HomeModule/HomeModule'
+import HomeModule from '@/app/modules/HomeModule/HomeModule'
 import { IData } from '@/app/interfaces/IData'
 import axios from 'axios'
 
