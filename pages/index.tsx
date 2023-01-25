@@ -2,7 +2,7 @@ import { HomeModule } from '@/app/modules/HomeModule/HomeModule'
 import { IData } from '@/app/interfaces/IData'
 import axios from 'axios'
 
-export default function Home(props: IData) {
+const Home = (props: IData) => {
 	return (
 		<>
 			<HomeModule {...props} />
@@ -40,3 +40,5 @@ export const getStaticProps = async () => {
 		}
 	}
 }
+
+export default Home
