@@ -2,7 +2,14 @@ import React from 'react'
 import { Meta } from '../../ui'
 import { IData } from '../../interfaces/IData'
 import styles from './Home.module.scss'
-import { AboutUs, Footer, HeroBlock, Steps, Tech } from '@/app/components'
+import {
+	AboutUs,
+	Footer,
+	Gallery,
+	HeroBlock,
+	Steps,
+	Tech
+} from '@/app/components'
 
 const HomeModule = ({
 	links,
@@ -23,6 +30,7 @@ const HomeModule = ({
 				<AboutUs mentors={mentors} />
 				<Tech technologies={technologies} />
 				<Steps />
+				<Gallery />
 			</div>
 			<Footer socials={socials} company={company} />
 		</>

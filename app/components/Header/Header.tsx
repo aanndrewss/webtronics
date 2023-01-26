@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './logo.svg'
+import Logo from '../../../public/logo.svg'
 import styles from './Header.module.scss'
 import { HeaderProps } from './Header.props'
 import { HeaderLink } from './HeaderLink/HeaderLink'

@@ -1,0 +1,21 @@
+.heading {
+	@apply text-center mt-[180px];
+}
+.gridTemplate {
+	@apply grid grid-cols-[288px_auto_288px] grid-rows-[1fr_1fr_1fr] gap-[24px] mt-[48px];
+	.p1 {
+		@apply self-center col-start-1 col-end-2 row-start-1 row-end-2;
+	}
+	.developer1 {
+		@apply min-w-[600px] rounded-[16px] col-start-2 col-end-3 row-start-1 row-end-3;
+	}
+	.developer2 {
+		@apply rounded-[16px] col-start-3 col-end-4 row-start-2 row-end-3;
+	}
+	.developer3 {
+		@apply justify-self-end rounded-[16px] col-start-1 col-end-2 row-start-2 row-end-4;
+	}
+	.p2 {
+		@apply self-end col-start-2 col-end-4 row-start-3 row-end-4;
+	}
+}

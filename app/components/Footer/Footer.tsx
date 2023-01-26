@@ -1,7 +1,7 @@
 import React from 'react'
 import { FooterProps } from './Footer.props'
 import styles from './Footer.module.scss'
-import Logo from './logo.svg'
+import Logo from '../../../public/logo.svg'
 import { Htag, Paragraph } from '@/app/ui'
 import { INavLinks } from '@/app/interfaces/INavLinks'
 import { CompanyLink } from './CompanyLink/CompanyLink'
