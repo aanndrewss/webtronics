@@ -1,18 +1,20 @@
-.cardBorder {
-	@apply relative w-[182px] h-[230px] rounded-[16px];
-
-	background-image: linear-gradient(
-		10deg,
-		rgba(21, 191, 253, 0.7) 9.96%,
-		rgba(156, 55, 253, 0.7) 100%
-	);
-	background-origin: border-box;
-	background-clip: padding-box, border-box;
-
-	clip-path: polygon(0 0, 100% 0, 100% 82%, 70% 100%, 0 100%);
-}
 .card {
-	@apply absolute top-[1px] left-[1px] w-[180px] h-[228px] rounded-[16px] flex flex-col gap-y-[16px] items-center bg-[#0f1438] px-[10px] py-[24px] hover:bg-[#181f58] transition-all duration-[0.33s] ease-out;
+	@apply flex flex-col gap-[16px] items-center pt-[24px] w-[182px] h-[230px] rounded-[16px] border-[1px] border-solid border-transparent hover:opacity-70 transition-all duration-300;
 
-	clip-path: polygon(0 0, 100% 0, 100% 82.3%, 70.3% 100%, 0 100%);
+	background: linear-gradient(
+				-39deg,
+				transparent 0 10%,
+				rgba(255, 255, 255, 0.051) 10% 100%
+			)
+			padding-box,
+		linear-gradient(-39deg, transparent 0 10%, #0c102d 10% 100%) padding-box,
+		linear-gradient(
+				141deg,
+				transparent 0,
+				rgba(21, 191, 253, 0.7) 5%,
+				rgba(156, 55, 253, 0.7) 90%,
+				transparent 90% 100%
+			)
+			border-box,
+		linear-gradient(-39deg, transparent 0 10%, #aeb0c3 10% 100%) border-box;
 }

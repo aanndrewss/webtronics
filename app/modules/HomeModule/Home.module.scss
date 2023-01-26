@@ -1,3 +1,40 @@
-.wrapper {
-	@apply max-w-[1213px] m-auto w-full;
+.page {
+	background: 
+  /* //heading */
+		no-repeat 30.3% 794px url('/images/background/star.svg'),
+		no-repeat 51.3% 738px url('/images/background/star.svg'),
+		no-repeat 65.35% 751px url('/images/background/star.svg'),
+		no-repeat 95.5% 593px url('/images/background/star.png'),
+		no-repeat 125% 40px url('/images/background/ellipse.png'),
+		no-repeat 0 0 url('/images/background/programmer-working.png'),
+		/* About Us */ no-repeat 17.85% 1137px
+			url('/images/background/star-white.svg'),
+		no-repeat 63.8% 1299px url('/images/background/star-small.svg'),
+		no-repeat 70.8% 1448px url('/images/background/star.svg'),
+		no-repeat 83.85% 1527px url('/images/background/star-big.svg'),
+		no-repeat 125% 930px url('/images/background/ellipse.png'),
+		/* //technologies */ no-repeat 30.5% 2260px
+			url('/images/background/star-medium.svg'),
+		/* Steps */ no-repeat 20.3% 2679px url('/images/background/star.svg'),
+		no-repeat 85.25% 2696px url('/images/background/star-medium.svg'),
+		no-repeat 63.25% 2855px url('/images/background/star.svg'),
+		no-repeat 79.35% 3087px url('/images/background/star.svg'),
+		/* questions */
+			/* no-repeat 85.25% 2696px url('/images/background/star-medium.svg'),  */
+			// 	no-repeat 65.25% 4380px url('/images/background/star-small.svg'),
+		// no-repeat 125% 3350px url('/images/background/ellipse.png'),
+		// no-repeat -40px 4100px url('/images/background/ellipse.png'),
+		// /* //review */ no-repeat 87.85% 4879px
+		// 	url('/images/background/star-medium.svg'),
+		// no-repeat 125% 4400px url('/images/background/ellipse.png'),
+		/* //gallery */ no-repeat 67.7% 6027px
+			url('/images/background/star-medium.svg'),
+		no-repeat 57.5% 6178px url('/images/background/star-small.svg'),
+		no-repeat 30% 6275px url('/images/background/star-small.svg'),
+		no-repeat -110px 5500px url('/images/background/ellipse.png'),
+		no-repeat 125% 5800px url('/images/background/ellipse.png');
+
+	.wrapper {
+		@apply max-w-[1213px] m-auto w-full;
+	}
 }

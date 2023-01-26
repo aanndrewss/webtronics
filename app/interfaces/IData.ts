@@ -1,6 +1,7 @@
-import { INavLinks } from '@/app/interfaces/INavLinks'
+import { INavLinks } from './INavLinks'
 import { IMentors } from './IMentors'
 import { ISocials } from './ISocials'
+import { ISteps } from './ISteps'
 import { ITech } from './ITech'
 
 export interface IData {
@@ -9,4 +10,5 @@ export interface IData {
 	technologies: ITech[]
 	socials: ISocials[]
 	company: INavLinks[]
+	steps: ISteps[]
 }

@@ -1,3 +1,5 @@
+import { ISteps } from '@/app/interfaces/ISteps'
+
 export interface StepsProps {
-	id: number
+	steps: ISteps[]
 }

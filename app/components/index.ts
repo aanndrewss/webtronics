@@ -1,6 +1,5 @@
 export * from './Header/Header'
 export * from './AboutUs/AboutUs'
-export * from './HeroBlock/HeroBlock'
 export * from './Heading/Heading'
 export * from './Tech/Tech'
 export * from './Steps/Steps'

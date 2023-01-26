@@ -1,13 +1,19 @@
-.bg {
-	@apply border-t-2 border-double border-transparent mt-[150px] px-[40px];
-	background-image: linear-gradient(#0f1438, #0f1438),
+.footer {
+	@apply border-t-[2px] border-solid border-transparent mt-[150px] px-[40px] min-h-[195px];
+	background: linear-gradient(
+				rgba(255, 255, 255, 0.05),
+				rgba(255, 255, 255, 0.05)
+			)
+			padding-box,
+		linear-gradient(#0c102d, #0c102d) padding-box,
 		linear-gradient(
-			152.14deg,
-			rgba(21, 191, 253, 0.7) 9.96%,
-			rgba(156, 55, 253, 0.7) 100%
-		);
-	background-origin: border-box;
-	background-clip: padding-box, border-box;
+				152.14deg,
+				rgba(21, 191, 253, 0.7) 9.96%,
+				rgba(156, 55, 253, 0.7) 100%
+			)
+			border-box;
+	backdrop-filter: blur(5px);
+
 	.wrapper {
 		@apply max-w-[1213px] m-auto w-full py-[35px] grid grid-cols-3 gap-x-[160px];
 		.logoInfo {
@@ -20,7 +26,7 @@
 			}
 		}
 		.company {
-			@apply grid grid-cols-2 gap-y-[16px] gap-x-[140px];
+			@apply grid grid-cols-[55px_55px] min-w-[225px] gap-y-[16px] gap-x-[145px];
 			.headingCompany {
 				@apply col-start-1 col-end-3 mb-[8px];
 			}

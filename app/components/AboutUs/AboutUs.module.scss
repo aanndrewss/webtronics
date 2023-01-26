@@ -1,8 +1,12 @@
+.heading {
+	@apply text-center mt-[180px];
+}
+
 .gridTemplate {
 	@apply grid grid-cols-[1fr_1fr_auto] grid-rows-[1fr_1fr] mt-[56px] gap-x-[15px];
 	.mentorsWrapper {
 		@apply flex flex-col items-center col-start-1 col-end-2 row-start-1 row-end-3;
-		.heading {
+		.headingMentors {
 			@apply text-center;
 		}
 		.mentors {

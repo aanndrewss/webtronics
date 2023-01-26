@@ -4,7 +4,7 @@ import styles from './Gallery.module.scss'
 
 export const Gallery = () => {
 	return (
-		<>
+		<section id={'Gallery'}>
 			<Htag tag="h2" className={styles.heading}>
 				Gallery
 			</Htag>
@@ -38,6 +38,6 @@ export const Gallery = () => {
 					page.
 				</Paragraph>
 			</div>
-		</>
+		</section>
 	)
 }
