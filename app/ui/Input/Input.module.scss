@@ -18,8 +18,13 @@
 				border-box;
 	}
 	.error {
-		background-image: linear-gradient(#23263a, #23263a),
-			linear-gradient(#fd4646, #fd4646);
+		background: linear-gradient(
+					rgba(255, 165, 165, 0.2),
+					rgba(255, 165, 165, 0.2)
+				)
+				padding-box,
+			linear-gradient(#0c102d, #0c102d) padding-box,
+			linear-gradient(#fd4646, #fd4646) border-box;
 	}
 	.errorMessage {
 		@apply absolute bottom-[-20px] left-0 text-errorColor;

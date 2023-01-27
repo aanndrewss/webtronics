@@ -1,0 +1,21 @@
+.dialog {
+	@apply relative z-10;
+	.bg {
+		@apply fixed inset-0 bg-black bg-opacity-25;
+	}
+	.container {
+		@apply fixed inset-0 overflow-y-auto;
+		.card {
+			@apply flex min-h-full items-center justify-center p-4 text-center;
+			.panel {
+				@apply w-full max-w-md transform overflow-hidden  bg-white p-6 text-left align-middle rounded-layout transition-all;
+				.htag {
+					@apply text-black;
+				}
+				.ptag {
+					@apply text-black;
+				}
+			}
+		}
+	}
+}

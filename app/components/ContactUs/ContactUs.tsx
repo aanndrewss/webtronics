@@ -1,19 +1,83 @@
 import { Button, Htag, Input, Paragraph } from '@/app/ui'
-import React from 'react'
+import React, { Fragment, useState } from 'react'
 import styles from './ContactUs.module.scss'
+import { yupResolver } from '@hookform/resolvers/yup'
+import * as yup from 'yup'
+import { useForm } from 'react-hook-form'
+import { Dialog, Transition } from '@headlessui/react'
+import { ModalDialog } from './Dialog/ModalDialog'
+
+interface IFormInputs {
+	name: string
+	phone: string
+	email: string
+}
+
+const phoneRegExp =
+	// eslint-disable-next-line no-useless-escape
+	/^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/
+
+const emailRegExp = /^\S+@\S+\.\S+$/
+
+const schema = yup
+	.object({
+		name: yup.string().required('Name is required'),
+		phone: yup
+			.string()
+			.required('Phone number is required')
+			.matches(phoneRegExp, 'Phone number is not valid'),
+		email: yup
+			.string()
+			.required('E-mail is required')
+			.matches(emailRegExp, 'Email is not valid')
+	})
+	.required()
 
 export const ContactUs = () => {
+	const [isOpen, setIsOpen] = useState<boolean>(false)
+	const {
+		register,
+		handleSubmit,
+		reset,
+		formState: { errors }
+	} = useForm<IFormInputs>({
+		resolver: yupResolver(schema),
+		mode: 'onTouched',
+		reValidateMode: 'onChange'
+	})
+
+	const onSubmit = (formData: IFormInputs): void => {
+		reset()
+		setIsOpen(true)
+		console.log(formData)
+	}
 	return (
 		<section className={styles.contact} id={'Get in touch'}>
-			<form className={styles.contactForm}>
+			<form onSubmit={handleSubmit(onSubmit)} className={styles.contactForm}>
 				<Htag tag="h2">Contact Us</Htag>
 				<Paragraph className={styles.subTitle}>
 					Do you have any kind of help please contact with us.
 				</Paragraph>
-				<Input placeholder="Name" className={styles.input} />
-				<Input placeholder="Phone" className={styles.input} />
-				<Input placeholder="E-mail" className={styles.input} />
+				<Input
+					error={errors.name}
+					placeholder="Name"
+					className={styles.input}
+					{...register('name')}
+				/>
+				<Input
+					error={errors.phone}
+					placeholder="Phone"
+					className={styles.input}
+					{...register('phone')}
+				/>
+				<Input
+					error={errors.email}
+					placeholder="E-mail"
+					className={styles.input}
+					{...register('email')}
+				/>
 				<Button className={styles.btn}>Send</Button>
+				{isOpen && <ModalDialog isOpen={isOpen} setIsOpen={setIsOpen} />}
 			</form>
 		</section>
 	)

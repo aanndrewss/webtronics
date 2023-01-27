@@ -32,7 +32,7 @@
 			}
 		}
 		.socials {
-			@apply grid grid-cols-[24px_24px_24px_24px] gap-[24px] grid-rows-[22px_auto];
+			@apply grid grid-cols-[24px_24px_24px_24px] gap-[24px] grid-rows-[22px_24px];
 			.headingSocials {
 				@apply col-start-1 col-end-5;
 			}
