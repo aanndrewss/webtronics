@@ -1,10 +1,27 @@
 import { Htag, Paragraph } from '@/app/ui'
+import { motion } from 'framer-motion'
 import React from 'react'
 import styles from './Gallery.module.scss'
 
 export const Gallery = () => {
+	const variants = {
+		visible: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				delay: 0.3
+			}
+		},
+		hidden: { opacity: 0, y: 200 }
+	}
+
 	return (
-		<section id={'Gallery'}>
+		<motion.section
+			initial="hidden"
+			whileInView="visible"
+			variants={variants}
+			id={'Gallery'}
+		>
 			<Htag tag="h2" className={styles.heading}>
 				Gallery
 			</Htag>
@@ -38,6 +55,6 @@ export const Gallery = () => {
 					page.
 				</Paragraph>
 			</div>
-		</section>
+		</motion.section>
 	)
 }

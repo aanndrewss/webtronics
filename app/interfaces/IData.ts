@@ -11,4 +11,5 @@ export interface IData {
 	socials: ISocials[]
 	company: INavLinks[]
 	steps: ISteps[]
+	faqs: ISteps[]
 }

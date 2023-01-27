@@ -1,0 +1,21 @@
+.faqs {
+	@apply mt-[180px];
+	.heading {
+		@apply text-center w-[641px] m-auto;
+	}
+	.faqsContent {
+		@apply grid grid-cols-[496px_1fr] gap-[24px] mt-[56px];
+		.aside {
+			@apply flex flex-col gap-[56px];
+			.p {
+				@apply w-[270px];
+			}
+			.questionSymbol {
+				@apply w-[344px] h-[405px] self-center;
+			}
+		}
+		.questionList {
+			@apply flex flex-col gap-[24px];
+		}
+	}
+}

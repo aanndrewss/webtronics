@@ -36,6 +36,10 @@ export const getStaticProps = async () => {
 			.get(`${process.env.API_HOST}/steps`)
 			.then(({ data }) => data)
 
+		const faqs = await axios
+			.get(`${process.env.API_HOST}/faqs`)
+			.then(({ data }) => data)
+
 		if (!links && !mentors && !technologies && !company && !socials && !steps) {
 			return {
 				notFound: true
@@ -48,7 +52,8 @@ export const getStaticProps = async () => {
 				technologies: technologies,
 				socials: socials,
 				company: company,
-				steps: steps
+				steps: steps,
+				faqs: faqs
 			},
 			revalidate: 60
 		}
@@ -60,7 +65,8 @@ export const getStaticProps = async () => {
 				technologies: null,
 				company: null,
 				socials: null,
-				steps: null
+				steps: null,
+				faqs: null
 			}
 		}
 	}

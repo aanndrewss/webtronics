@@ -9,7 +9,8 @@ import {
 	Header,
 	Heading,
 	Steps,
-	Tech
+	Tech,
+	FAQs
 } from '@/app/components'
 
 const HomeModule = ({
@@ -18,9 +19,18 @@ const HomeModule = ({
 	technologies,
 	socials,
 	company,
-	steps
+	steps,
+	faqs
 }: IData) => {
-	if (!links && !mentors && !technologies && !socials && !company && !steps) {
+	if (
+		!links &&
+		!mentors &&
+		!technologies &&
+		!socials &&
+		!company &&
+		!steps &&
+		!faqs
+	) {
 		return null
 	}
 
@@ -34,6 +44,7 @@ const HomeModule = ({
 					<AboutUs mentors={mentors} />
 					<Tech technologies={technologies} />
 					<Steps steps={steps} />
+					<FAQs faqs={faqs} />
 					<Gallery />
 				</main>
 				<Footer socials={socials} company={company} />
