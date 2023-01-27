@@ -33,6 +33,7 @@ export const Tech = ({ technologies }: TechProps): JSX.Element => {
 			variants={variants}
 			initial="hidden"
 			whileInView="visible"
+			viewport={{ once: true }}
 			id={'Programs'}
 			className={styles.wrapper}
 		>
@@ -47,6 +48,7 @@ export const Tech = ({ technologies }: TechProps): JSX.Element => {
 				variants={container}
 				initial="hidden"
 				whileInView="show"
+				viewport={{ once: true }}
 				className={styles.technologies}
 			>
 				{technologies.map((t: ITech) => (

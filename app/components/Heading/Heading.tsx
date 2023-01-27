@@ -19,6 +19,7 @@ export const Heading = () => {
 			initial="hidden"
 			whileInView="visible"
 			variants={variants}
+			viewport={{ once: true }}
 			className={styles.gridTemplate}
 		>
 			<Htag className={styles.first} tag="h1">

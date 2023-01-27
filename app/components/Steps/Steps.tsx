@@ -29,6 +29,7 @@ export const Steps = ({ steps }: StepsProps): JSX.Element => {
 				variants={container}
 				initial="hidden"
 				whileInView="show"
+				viewport={{ once: true }}
 				className={styles.stepsList}
 			>
 				{steps.map((s: ISteps) => (

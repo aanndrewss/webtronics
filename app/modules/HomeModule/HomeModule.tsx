@@ -10,7 +10,8 @@ import {
 	Heading,
 	Steps,
 	Tech,
-	FAQs
+	FAQs,
+	ContactUs
 } from '@/app/components'
 
 const HomeModule = ({
@@ -46,6 +47,7 @@ const HomeModule = ({
 					<Steps steps={steps} />
 					<FAQs faqs={faqs} />
 					<Gallery />
+					<ContactUs />
 				</main>
 				<Footer socials={socials} company={company} />
 			</div>

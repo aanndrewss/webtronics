@@ -2,16 +2,20 @@
 	@apply relative;
 
 	.input {
-		@apply text-[16px] leading-[22px] text-textColor p-[24px] border-2 border-double border-transparent rounded-layout active:text-white disabled:border-borderColor disabled:text-borderColor placeholder:text-textColor disabled:placeholder:text-borderColor;
+		@apply min-w-[493px] text-[16px] leading-[22px] text-textColor p-[24px] border-[1px] border-solid border-transparent rounded-layout active:text-white disabled:border-borderColor disabled:text-borderColor placeholder:text-textColor disabled:placeholder:text-borderColor;
 		font-family: 'Inter', sans-serif;
-		background-image: linear-gradient(#23263a, #23263a),
+		background: linear-gradient(
+					rgba(255, 255, 255, 0.05),
+					rgba(255, 255, 255, 0.05)
+				)
+				padding-box,
+			linear-gradient(#0c102d, #0c102d) padding-box,
 			linear-gradient(
-				152.14deg,
-				rgba(21, 191, 253, 0.7) 9.96%,
-				rgba(156, 55, 253, 0.7) 100%
-			);
-		background-origin: border-box;
-		background-clip: padding-box, border-box;
+					152.14deg,
+					rgba(21, 191, 253, 0.7) 9.96%,
+					rgba(156, 55, 253, 0.7) 100%
+				)
+				border-box;
 	}
 	.error {
 		background-image: linear-gradient(#23263a, #23263a),

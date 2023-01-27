@@ -41,6 +41,7 @@ export const FAQs = ({ faqs }: FAQsProps): JSX.Element => {
 					variants={container}
 					initial="hidden"
 					whileInView="show"
+					viewport={{ once: true }}
 					className={styles.questionList}
 				>
 					{faqs.map((f: ISteps) => (

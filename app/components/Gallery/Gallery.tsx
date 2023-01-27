@@ -20,6 +20,7 @@ export const Gallery = () => {
 			initial="hidden"
 			whileInView="visible"
 			variants={variants}
+			viewport={{ once: true }}
 			id={'Gallery'}
 		>
 			<Htag tag="h2" className={styles.heading}>

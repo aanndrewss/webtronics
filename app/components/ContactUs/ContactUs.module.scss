@@ -1,0 +1,24 @@
+.contactForm {
+	@apply flex flex-col mt-[180px] gap-[16px] justify-center items-center py-[56px] px-[360px] rounded-layout border-[1px] border-solid border-transparent;
+	background: linear-gradient(
+				rgba(255, 255, 255, 0.05),
+				rgba(255, 255, 255, 0.05)
+			)
+			padding-box,
+		linear-gradient(#0c102d, #0c102d) padding-box,
+		linear-gradient(
+				152.14deg,
+				rgba(21, 191, 253, 0.7) 9.96%,
+				rgba(156, 55, 253, 0.7) 100%
+			)
+			border-box;
+
+	backdrop-filter: blur(5px);
+	.subTitle {
+		@apply mb-[8px];
+	}
+
+	.btn {
+		@apply w-full mt-[8px];
+	}
+}
