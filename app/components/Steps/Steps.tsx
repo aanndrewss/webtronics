@@ -1,18 +1,38 @@
 import { ISteps } from '@/app/interfaces/ISteps'
 import { Htag, Paragraph } from '@/app/ui'
+import { motion } from 'framer-motion'
 import React from 'react'
 import styles from './Steps.module.scss'
 import { StepsProps } from './Steps.props'
 
 export const Steps = ({ steps }: StepsProps): JSX.Element => {
+	const container = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.4
+			}
+		}
+	}
+
+	const item = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 }
+	}
 	return (
 		<section id={'Steps'}>
 			<Htag className={styles.heading} tag="h2">
 				Steps
 			</Htag>
-			<ol className={styles.stepsList}>
+			<motion.ol
+				variants={container}
+				initial="hidden"
+				whileInView="show"
+				className={styles.stepsList}
+			>
 				{steps.map((s: ISteps) => (
-					<li key={s.id} className={styles.step}>
+					<motion.li variants={item} key={s.id} className={styles.step}>
 						<svg
 							width="146"
 							height="228"
@@ -46,9 +66,9 @@ export const Steps = ({ steps }: StepsProps): JSX.Element => {
 						<Htag tag="h4">Step {s.id}</Htag>
 						<Htag tag="h3">{s.name}</Htag>
 						<Paragraph className={styles.p}>{s.description}</Paragraph>
-					</li>
+					</motion.li>
 				))}
-			</ol>
+			</motion.ol>
 		</section>
 	)
 }
