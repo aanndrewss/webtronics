@@ -6,13 +6,12 @@ import {
 	AboutUs,
 	Footer,
 	Gallery,
-	Header,
-	Heading,
 	Steps,
 	Tech,
 	FAQs,
 	ContactUs,
-	HeroBlock
+	HeroBlock,
+	Review
 } from '@/app/components'
 
 const HomeModule = ({
@@ -22,7 +21,8 @@ const HomeModule = ({
 	socials,
 	company,
 	steps,
-	faqs
+	faqs,
+	reviews
 }: IData) => {
 	if (
 		!links &&
@@ -31,7 +31,8 @@ const HomeModule = ({
 		!socials &&
 		!company &&
 		!steps &&
-		!faqs
+		!faqs &&
+		!reviews
 	) {
 		return null
 	}
@@ -47,6 +48,7 @@ const HomeModule = ({
 					<Steps steps={steps} />
 					<FAQs faqs={faqs} />
 					<Gallery />
+					<Review reviews={reviews} />
 					<ContactUs />
 				</main>
 				<Footer socials={socials} company={company} />

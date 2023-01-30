@@ -1,0 +1,25 @@
+.reviewText {
+	@apply flex flex-col gap-[17px] mt-[90px] col-start-1 col-end-2 row-start-2 row-end-3;
+	.reviewName {
+		@apply hidden;
+		&.activeName {
+			@apply block;
+		}
+	}
+	.reviewDescription {
+		@apply hidden;
+		&.activeDesc {
+			@apply block;
+		}
+	}
+}
+.reviewIndex {
+	@apply hidden;
+	&.activeReviewIndex {
+		@apply block text-[24px] text-center justify-self-start col-start-2 col-end-3 row-start-1 row-end-2;
+		font-family: 'Clash Display';
+		span {
+			@apply text-[16px] align-super;
+		}
+	}
+}

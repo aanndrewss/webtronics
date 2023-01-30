@@ -12,4 +12,5 @@ export interface IData {
 	company: INavLinks[]
 	steps: ISteps[]
 	faqs: ISteps[]
+	reviews: IMentors[]
 }

@@ -22,7 +22,7 @@ export const FAQs = ({ faqs }: FAQsProps): JSX.Element => {
 		show: { opacity: 1 }
 	}
 	return (
-		<section id={'FAQs'} className={styles.faqs}>
+		<section id={'Questions'} className={styles.faqs}>
 			<Htag tag="h2" className={styles.heading}>
 				Frequently Asked Questions
 			</Htag>
@@ -32,7 +32,7 @@ export const FAQs = ({ faqs }: FAQsProps): JSX.Element => {
 						Do you have any kind of questions? We are here to help.
 					</Paragraph>
 					<img
-						src="/images/question.png"
+						src="images/question.png"
 						alt="question symbol"
 						className={styles.questionSymbol}
 					/>

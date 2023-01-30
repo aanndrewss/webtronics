@@ -6,6 +6,7 @@ import * as yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { Dialog, Transition } from '@headlessui/react'
 import { ModalDialog } from './Dialog/ModalDialog'
+import { motion } from 'framer-motion'
 
 interface IFormInputs {
 	name: string
@@ -51,8 +52,26 @@ export const ContactUs = () => {
 		setIsOpen(true)
 		console.log(formData)
 	}
+
+	const variants = {
+		visible: {
+			opacity: 1,
+
+			transition: {
+				delay: 0.3
+			}
+		},
+		hidden: { opacity: 0 }
+	}
 	return (
-		<section className={styles.contact} id={'Get in touch'}>
+		<motion.section
+			initial="hidden"
+			whileInView="visible"
+			variants={variants}
+			viewport={{ once: true }}
+			className={styles.contact}
+			id={'Get in touch'}
+		>
 			<form onSubmit={handleSubmit(onSubmit)} className={styles.contactForm}>
 				<Htag tag="h2">Contact Us</Htag>
 				<Paragraph className={styles.subTitle}>
@@ -79,6 +98,6 @@ export const ContactUs = () => {
 				<Button className={styles.btn}>Send</Button>
 				{isOpen && <ModalDialog isOpen={isOpen} setIsOpen={setIsOpen} />}
 			</form>
-		</section>
+		</motion.section>
 	)
 }

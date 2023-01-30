@@ -1,0 +1,50 @@
+@import 'styles/scss/mixins.scss';
+@import 'styles/scss/variables.scss';
+
+.listItem {
+	@apply order-1;
+	.imageItem {
+		@apply object-cover p-[1px] bg-white rounded-[16px]  block w-[184px] h-[422px];
+		@include roundedGradientBorder(16px, 1px, $gradient-1-reversed);
+		transition: width 0.3s ease-in-out;
+		clip-path: polygon(
+			0 0,
+			100% 0,
+			100% calc(100% - 32px),
+			calc(100% - 32px) 100%,
+			0 100%,
+			0 0
+		);
+
+		&.activeImage {
+			@apply w-[392px] h-[422px];
+			clip-path: polygon(
+				0 0,
+				100% 0,
+				100% calc(100% - 70px),
+				calc(100% - 70px) 100%,
+				0 100%,
+				0 0
+			);
+		}
+	}
+
+	&.activeListItem {
+		@apply order-[0];
+	}
+}
+.listItem:first-child {
+	.imageItem {
+		object-position: 52% 50%;
+	}
+}
+.listItem:nth-child(2) {
+	.imageItem {
+		object-position: 65% 50%;
+	}
+}
+.listItem:last-child {
+	.imageItem {
+		object-position: 80% 50%;
+	}
+}

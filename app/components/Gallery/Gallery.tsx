@@ -12,7 +12,7 @@ export const Gallery = () => {
 				delay: 0.3
 			}
 		},
-		hidden: { opacity: 0, y: 200 }
+		hidden: { opacity: 0, y: 300 }
 	}
 
 	return (

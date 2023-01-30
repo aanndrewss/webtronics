@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+@mixin roundedGradientBorder($radius, $size, $gradient) {
+	position: relative;
+	background: $gradient;
+	border-radius: $radius;
+	clip-path: polygon(0px 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0px);
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: $size;
+		right: $size;
+		bottom: $size;
+		left: $size;
+		background: linear-gradient(rgba(#fff, 0.05), rgba(#fff, 0.05)),
+			linear-gradient($mainBgColor, $mainBgColor);
+		border-radius: $radius;
+		clip-path: polygon(0px 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0px);
+		z-index: -1;
+		pointer-events: none;
+	}
+}
