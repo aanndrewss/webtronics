@@ -9,7 +9,7 @@ import Front from './front.svg'
 
 export const AboutUs = ({ mentors }: AboutUsProps): JSX.Element => {
 	return (
-		<section id={'About'}>
+		<section id={'About'} className={styles.about}>
 			<Htag className={styles.heading} tag="h2">
 				About Us
 			</Htag>

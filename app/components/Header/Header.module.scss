@@ -1,5 +1,5 @@
 .header {
-	@apply flex flex-row justify-between m-auto max-w-[1213px] items-center pt-[38px];
+	@apply flex flex-row justify-between items-center pt-[38px];
 	.logo {
 		@apply hover:opacity-60 transition-all duration-[0.2s];
 	}

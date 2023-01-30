@@ -11,7 +11,8 @@ import {
 	Steps,
 	Tech,
 	FAQs,
-	ContactUs
+	ContactUs,
+	HeroBlock
 } from '@/app/components'
 
 const HomeModule = ({
@@ -39,9 +40,8 @@ const HomeModule = ({
 		<>
 			<Meta title="Webtronics | Courses" description="The best courses" />
 			<div className={styles.page}>
-				<Header links={links} />
+				<HeroBlock links={links} />
 				<main className={styles.wrapper}>
-					<Heading />
 					<AboutUs mentors={mentors} />
 					<Tech technologies={technologies} />
 					<Steps steps={steps} />
