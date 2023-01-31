@@ -13,15 +13,13 @@ export const ReviewImg = ({
 				[styles.activeListItem]: activeItem === review.id
 			})}
 		>
-			<div className={styles.imageContainer}>
-				<img
-					className={cn(styles.imageItem, {
-						[styles.activeImage]: activeItem === review.id
-					})}
-					src={review.imgPath}
-					alt={review.name}
-				/>
-			</div>
+			<img
+				className={cn(styles.imageItem, {
+					[styles.activeImage]: activeItem === review.id
+				})}
+				src={review.imgPath}
+				alt={review.name}
+			/>
 		</li>
 	)
 }

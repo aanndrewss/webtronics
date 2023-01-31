@@ -2,35 +2,25 @@
 @import 'styles/scss/variables.scss';
 
 .listItem {
-	@apply order-1;
+	@apply order-1 box-content rounded-[16px] p-[1px];
+	@include roundedGradientBorder(16px, 2px, $gradient-1-reversed);
+	@include croppedBorder(32px, false, false, true);
 	.imageItem {
-		@apply block h-[422px] w-[184px] rounded-[16px]  bg-white object-cover p-[1px];
-		@include roundedGradientBorder(16px, 1px, $gradient-1-reversed);
-		transition: width 0.3s ease-in-out;
-		clip-path: polygon(
-			0 0,
-			100% 0,
-			100% calc(100% - 32px),
-			calc(100% - 32px) 100%,
-			0 100%,
-			0 0
-		);
+		@apply block h-[422px] w-[184px] rounded-[16px] border-[1px] border-solid border-transparent object-cover transition-all duration-300;
+		@include roundedGradientBorder(16px, 2px, $gradient-1-reversed);
+		@include croppedBorder(32px, false, false, true);
 
 		&.activeImage {
 			@apply h-[422px] w-[392px];
-			clip-path: polygon(
-				0 0,
-				100% 0,
-				100% calc(100% - 70px),
-				calc(100% - 70px) 100%,
-				0 100%,
-				0 0
-			);
+			@include roundedGradientBorder(16px, 2px, $gradient-1-reversed);
+			@include croppedBorder(64px, false, false, true);
 		}
 	}
 
 	&.activeListItem {
 		@apply order-[0];
+		@include roundedGradientBorder(16px, 2px, $gradient-1-reversed);
+		@include croppedBorder(64px, false, false, true);
 	}
 }
 .listItem:first-child {

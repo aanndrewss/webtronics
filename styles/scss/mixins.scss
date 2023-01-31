@@ -21,3 +21,35 @@
 		pointer-events: none;
 	}
 }
+
+@mixin croppedBorder(
+	$corner: 32px,
+	$top-left: false,
+	$top-right: false,
+	$bottom-right: false,
+	$bottom-left: false
+) {
+	clip-path: polygon(
+		if($top-left == true, 0 $corner, 0 0),
+		if($top-left == true, $corner 0, 0 0),
+		if($top-right == true, calc(100% - $corner) 0, 100% 0),
+		if($top-right == true, 100% $corner, 100% 0),
+		if($bottom-right == true, 100% calc(100% - $corner), 100% 100%),
+		if($bottom-right == true, calc(100% - $corner) 100%, 100% 100%),
+		if($bottom-left == true, $corner 100%, 0 100%),
+		if($bottom-left == true, 0 calc(100% - $corner), 0 100%)
+	);
+
+	&::before {
+		clip-path: polygon(
+			if($top-left == true, 0 $corner, 0 0),
+			if($top-left == true, $corner 0, 0 0),
+			if($top-right == true, calc(100% - $corner) 0, 100% 0),
+			if($top-right == true, 100% $corner, 100% 0),
+			if($bottom-right == true, 100% calc(100% - $corner), 100% 100%),
+			if($bottom-right == true, calc(100% - $corner) 100%, 100% 100%),
+			if($bottom-left == true, $corner 100%, 0 100%),
+			if($bottom-left == true, 0 calc(100% - $corner), 0 100%)
+		);
+	}
+}
