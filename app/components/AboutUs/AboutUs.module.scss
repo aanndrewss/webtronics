@@ -3,9 +3,9 @@
 }
 
 .gridTemplate {
-	@apply grid grid-cols-[1fr_1fr_auto] grid-rows-[1fr_1fr] mt-[56px] gap-x-[15px];
+	@apply mt-[56px] grid grid-cols-[1fr_1fr_auto] grid-rows-[1fr_1fr] gap-x-[15px];
 	.mentorsWrapper {
-		@apply flex flex-col items-center col-start-1 col-end-2 row-start-1 row-end-3;
+		@apply col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col items-center;
 		.headingMentors {
 			@apply text-center;
 		}
@@ -14,9 +14,9 @@
 		}
 	}
 	.description {
-		@apply self-center max-w-[486px] col-start-2 col-end-3 row-start-1 row-end-2;
+		@apply col-start-2 col-end-3 row-start-1 row-end-2 max-w-[486px] self-center;
 	}
 	.front {
-		@apply row-start-2 row-end-3 col-start-2 col-end-4 self-end ml-[120px];
+		@apply col-start-2 col-end-4 row-start-2 row-end-3 ml-[120px] self-end;
 	}
 }

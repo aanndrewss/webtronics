@@ -29,6 +29,6 @@
 		no-repeat 30% 6275px url('/images/background/star-small.svg');
 
 	.wrapper {
-		@apply max-w-[1213px] m-auto w-full;
+		@apply m-auto w-full max-w-[1213px];
 	}
 }

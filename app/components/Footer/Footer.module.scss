@@ -1,5 +1,5 @@
 .footer {
-	@apply border-t-[2px] border-solid border-transparent mt-[150px] px-[40px] min-h-[195px];
+	@apply mt-[150px] min-h-[195px] border-t-[2px] border-solid border-transparent px-[40px];
 	background: linear-gradient(
 				rgba(255, 255, 255, 0.05),
 				rgba(255, 255, 255, 0.05)
@@ -15,24 +15,24 @@
 	backdrop-filter: blur(5px);
 
 	.wrapper {
-		@apply max-w-[1213px] m-auto w-full py-[35px] grid grid-cols-3 gap-x-[160px];
+		@apply m-auto grid w-full max-w-[1213px] grid-cols-3 gap-x-[160px] py-[35px];
 		.logoInfo {
 			@apply flex flex-col items-start gap-[24px];
 			.logo {
-				@apply hover:opacity-60 transition-all duration-[0.2s];
+				@apply transition-all duration-[0.2s] hover:opacity-60;
 			}
 			.description {
 				@apply max-w-[231px];
 			}
 		}
 		.company {
-			@apply grid grid-cols-[55px_55px] min-w-[225px] gap-y-[16px] gap-x-[145px];
+			@apply grid min-w-[225px] grid-cols-[55px_55px] gap-y-[16px] gap-x-[145px];
 			.headingCompany {
 				@apply col-start-1 col-end-3 mb-[8px];
 			}
 		}
 		.socials {
-			@apply grid grid-cols-[24px_24px_24px_24px] gap-[24px] grid-rows-[22px_24px];
+			@apply grid grid-cols-[24px_24px_24px_24px] grid-rows-[22px_24px] gap-[24px];
 			.headingSocials {
 				@apply col-start-1 col-end-5;
 			}

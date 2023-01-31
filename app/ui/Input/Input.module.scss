@@ -2,7 +2,7 @@
 	@apply relative;
 
 	.input {
-		@apply min-w-[493px] text-[16px] leading-[22px] text-textColor p-[24px] border-[1px] border-solid border-transparent rounded-layout active:text-white disabled:border-borderColor disabled:text-borderColor placeholder:text-textColor disabled:placeholder:text-borderColor;
+		@apply rounded-layout border-[1px] border-solid border-transparent p-[24px] text-[16px] leading-[22px] text-textColor first-letter:min-w-[493px] placeholder:text-textColor active:text-white disabled:border-borderColor disabled:text-borderColor disabled:placeholder:text-borderColor;
 		font-family: 'Inter', sans-serif;
 		background: linear-gradient(
 					rgba(255, 255, 255, 0.05),

@@ -1,5 +1,5 @@
 .contactForm {
-	@apply flex flex-col mt-[180px] gap-[20px] justify-center items-center py-[56px] px-[360px] rounded-layout border-[1px] border-solid border-transparent;
+	@apply mt-[180px] flex flex-col items-center justify-center gap-[20px] rounded-layout border-[1px] border-solid border-transparent py-[56px] px-[360px];
 	background: linear-gradient(
 				rgba(255, 255, 255, 0.05),
 				rgba(255, 255, 255, 0.05)
@@ -19,6 +19,6 @@
 	}
 
 	.btn {
-		@apply w-full mt-[8px];
+		@apply mt-[8px] w-full;
 	}
 }

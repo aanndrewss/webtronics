@@ -1,5 +1,5 @@
 .questionItem {
-	@apply relative flex flex-col gap-[16px] rounded-layout border-[1px] border-transparent border-solid px-[24px] py-[27px];
+	@apply relative flex flex-col gap-[16px] rounded-layout border-[1px] border-solid border-transparent px-[24px] py-[27px];
 	background: linear-gradient(
 				-45deg,
 				transparent 0 4%,
@@ -33,7 +33,7 @@
 		@apply hidden;
 	}
 	.questionBtn {
-		@apply absolute right-[20px] top-[20px] bg-transparent border-none bg-center bg-no-repeat w-[10px] h-[10px] p-[15px] cursor-pointer;
+		@apply absolute right-[20px] top-[20px] h-[10px] w-[10px] cursor-pointer border-none bg-transparent bg-center bg-no-repeat p-[15px];
 		background-image: url("data:image/svg+xml,%3Csvg width='16' height='3' viewBox='0 0 16 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 1.5C0 0.947715 0.447715 0.5 1 0.5H15C15.5523 0.5 16 0.947715 16 1.5C16 2.05228 15.5523 2.5 15 2.5H1C0.447715 2.5 0 2.05228 0 1.5Z' fill='white'/%3E%3C/svg%3E%0A");
 	}
 	&.active {

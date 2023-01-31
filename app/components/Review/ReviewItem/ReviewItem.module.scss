@@ -1,5 +1,5 @@
 .reviewText {
-	@apply flex flex-col gap-[17px] mt-[90px] col-start-1 col-end-2 row-start-2 row-end-3;
+	@apply col-start-1 col-end-2 row-start-2 row-end-3 mt-[90px] flex flex-col gap-[17px];
 	.reviewName {
 		@apply hidden;
 		&.activeName {
@@ -16,10 +16,10 @@
 .reviewIndex {
 	@apply hidden;
 	&.activeReviewIndex {
-		@apply block text-[24px] text-center justify-self-start col-start-2 col-end-3 row-start-1 row-end-2;
+		@apply col-start-2 col-end-3 row-start-1 row-end-2 block justify-self-start text-center text-[24px];
 		font-family: 'Clash Display';
 		span {
-			@apply text-[16px] align-super;
+			@apply align-super text-[16px];
 		}
 	}
 }

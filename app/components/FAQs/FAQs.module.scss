@@ -1,17 +1,17 @@
 .faqs {
 	@apply mt-[180px];
 	.heading {
-		@apply text-center w-[641px] m-auto;
+		@apply m-auto w-[641px] text-center;
 	}
 	.faqsContent {
-		@apply grid grid-cols-[496px_1fr] gap-[24px] mt-[56px];
+		@apply mt-[56px] grid grid-cols-[496px_1fr] gap-[24px];
 		.aside {
 			@apply flex flex-col gap-[56px];
 			.p {
 				@apply w-[270px];
 			}
 			.questionSymbol {
-				@apply w-[344px] h-[405px] self-center;
+				@apply h-[405px] w-[344px] self-center;
 			}
 		}
 		.questionList {

@@ -1,5 +1,5 @@
 .gridTemplate {
-	@apply grid grid-cols-[auto_auto_360px] items-center gap-x-[24px] mt-[116px];
+	@apply mt-[116px] grid grid-cols-[auto_auto_360px] items-center gap-x-[24px];
 	.first {
 		@apply col-start-1 col-end-3;
 	}

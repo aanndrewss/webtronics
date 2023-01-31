@@ -4,7 +4,7 @@
 .listItem {
 	@apply order-1;
 	.imageItem {
-		@apply object-cover p-[1px] bg-white rounded-[16px]  block w-[184px] h-[422px];
+		@apply block h-[422px] w-[184px] rounded-[16px]  bg-white object-cover p-[1px];
 		@include roundedGradientBorder(16px, 1px, $gradient-1-reversed);
 		transition: width 0.3s ease-in-out;
 		clip-path: polygon(
@@ -17,7 +17,7 @@
 		);
 
 		&.activeImage {
-			@apply w-[392px] h-[422px];
+			@apply h-[422px] w-[392px];
 			clip-path: polygon(
 				0 0,
 				100% 0,
