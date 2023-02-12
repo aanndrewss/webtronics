@@ -1,9 +1,9 @@
 import { Htag, Paragraph } from '@/app/ui'
-import React, { useState } from 'react'
-import { FAQProps } from './FAQ.props'
-import styles from './FAQ.module.scss'
 import cn from 'classnames'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
+import styles from './FAQ.module.scss'
+import { FAQProps } from './FAQ.props'
 
 export const FAQ = ({ faq, item }: FAQProps): JSX.Element => {
 	const [isActive, setIsActive] = useState<boolean>(false)

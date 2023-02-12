@@ -1,10 +1,9 @@
-import React from 'react'
-import { AboutUsProps } from './AboutUs.props'
-import styles from './AboutUs.module.scss'
 import { IMentors } from '@/app/interfaces/IMentors'
-import { Mentor } from './Mentor/Mentor'
 import { Htag, Paragraph } from '@/app/ui'
+import styles from './AboutUs.module.scss'
+import { AboutUsProps } from './AboutUs.props'
 import Front from './front.svg'
+import { Mentor } from './Mentor/Mentor'
 
 export const AboutUs = ({ mentors }: AboutUsProps): JSX.Element => {
 	return (

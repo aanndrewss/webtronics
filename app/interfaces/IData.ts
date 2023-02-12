@@ -1,5 +1,5 @@
-import { INavLinks } from './INavLinks'
 import { IMentors } from './IMentors'
+import { INavLinks } from './INavLinks'
 import { ISocials } from './ISocials'
 import { ISteps } from './ISteps'
 import { ITech } from './ITech'

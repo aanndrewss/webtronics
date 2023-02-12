@@ -1,6 +1,5 @@
-import React from 'react'
-import { SocialLinkProps } from './SocialLink.props'
 import styles from './SocialLink.module.scss'
+import { SocialLinkProps } from './SocialLink.props'
 
 export const SocialLink = ({ social }: SocialLinkProps): JSX.Element => {
 	return (

@@ -1,11 +1,10 @@
-import React from 'react'
-import { FooterProps } from './Footer.props'
-import styles from './Footer.module.scss'
-import Logo from '../../../public/logo.svg'
-import { Htag, Paragraph } from '@/app/ui'
 import { INavLinks } from '@/app/interfaces/INavLinks'
-import { CompanyLink } from './CompanyLink/CompanyLink'
 import { ISocials } from '@/app/interfaces/ISocials'
+import { Htag, Paragraph } from '@/app/ui'
+import Logo from '../../../public/logo.svg'
+import { CompanyLink } from './CompanyLink/CompanyLink'
+import styles from './Footer.module.scss'
+import { FooterProps } from './Footer.props'
 import { SocialLink } from './SocialLink/SocialLink'
 
 export const Footer = ({ company, socials }: FooterProps): JSX.Element => {

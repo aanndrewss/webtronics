@@ -1,8 +1,7 @@
-import React from 'react'
-import { TechItemProps } from './TechItem.props'
-import styles from './TechItem.module.scss'
 import { Htag } from '@/app/ui'
 import { motion } from 'framer-motion'
+import styles from './TechItem.module.scss'
+import { TechItemProps } from './TechItem.props'
 
 export const TechItem = ({ tech, item }: TechItemProps): JSX.Element => {
 	return (

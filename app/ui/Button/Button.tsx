@@ -1,7 +1,6 @@
-import React from 'react'
-import { ButtonProps } from './Button.props'
-import styles from './Button.module.scss'
 import cn from 'classnames'
+import styles from './Button.module.scss'
+import { ButtonProps } from './Button.props'
 
 export const Button = ({
 	children,

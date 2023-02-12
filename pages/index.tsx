@@ -1,5 +1,5 @@
-import HomeModule from '@/app/modules/HomeModule/HomeModule'
 import { IData } from '@/app/interfaces/IData'
+import HomeModule from '@/app/modules/HomeModule/HomeModule'
 import axios from 'axios'
 
 const Home = (props: IData) => {

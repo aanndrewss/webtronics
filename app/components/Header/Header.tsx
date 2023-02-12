@@ -1,9 +1,8 @@
-import React from 'react'
+import { INavLinks } from '@/app/interfaces/INavLinks'
 import Logo from '../../../public/logo.svg'
 import styles from './Header.module.scss'
 import { HeaderProps } from './Header.props'
 import { HeaderLink } from './HeaderLink/HeaderLink'
-import { INavLinks } from '@/app/interfaces/INavLinks'
 
 export const Header = ({ links }: HeaderProps): JSX.Element => {
 	return (

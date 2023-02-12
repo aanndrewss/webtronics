@@ -1,12 +1,11 @@
 import { Button, Htag, Input, Paragraph } from '@/app/ui'
-import React, { Fragment, useState } from 'react'
-import styles from './ContactUs.module.scss'
 import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from 'yup'
-import { useForm } from 'react-hook-form'
-import { Dialog, Transition } from '@headlessui/react'
-import { ModalDialog } from './Dialog/ModalDialog'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import * as yup from 'yup'
+import styles from './ContactUs.module.scss'
+import { ModalDialog } from './Dialog/ModalDialog'
 
 interface IFormInputs {
 	name: string

@@ -1,6 +1,5 @@
 import { Htag, Paragraph } from '@/app/ui'
 import { motion } from 'framer-motion'
-import React from 'react'
 import styles from './Gallery.module.scss'
 
 export const Gallery = () => {

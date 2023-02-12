@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
 import Head from 'next/head'
+import { FC } from 'react'
 
 interface IMetaProps {
 	title: string

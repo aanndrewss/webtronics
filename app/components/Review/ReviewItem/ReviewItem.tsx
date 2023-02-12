@@ -1,8 +1,7 @@
 import { Htag, Paragraph } from '@/app/ui'
-import React from 'react'
-import { ReviewItemProps } from './ReviewItem.props'
 import cn from 'classnames'
 import styles from './ReviewItem.module.scss'
+import { ReviewItemProps } from './ReviewItem.props'
 
 export const ReviewItem = ({
 	review,

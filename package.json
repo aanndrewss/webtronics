@@ -33,6 +33,7 @@
 		"@typescript-eslint/parser": "^5.48.2",
 		"autoprefixer": "^10.4.13",
 		"babel-plugin-inline-react-svg": "^2.0.1",
+		"cross-env": "^7.0.3",
 		"eslint": "^8.32.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-tailwindcss": "^3.8.2",

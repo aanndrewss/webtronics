@@ -1,7 +1,6 @@
-import React from 'react'
-import { ReviewImgProps } from './ReviewImg.props'
-import styles from './ReviewImg.module.scss'
 import cn from 'classnames'
+import styles from './ReviewImg.module.scss'
+import { ReviewImgProps } from './ReviewImg.props'
 
 export const ReviewImg = ({
 	review,

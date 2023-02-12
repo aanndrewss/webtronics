@@ -1,12 +1,11 @@
 import { IMentors } from '@/app/interfaces/IMentors'
 import { Htag } from '@/app/ui'
-import React, { useState } from 'react'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
 import styles from './Review.module.scss'
 import { ReviewProps } from './Review.props'
-import { ReviewItem } from './ReviewItem/ReviewItem'
-import cn from 'classnames'
-import { motion } from 'framer-motion'
 import { ReviewImg } from './ReviewImg/ReviewImg'
+import { ReviewItem } from './ReviewItem/ReviewItem'
 
 export const Review = ({ reviews }: ReviewProps): JSX.Element => {
 	const [activeItem, setActiveItem] = useState<number>(1)

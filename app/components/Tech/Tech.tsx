@@ -1,10 +1,9 @@
 import { ITech } from '@/app/interfaces/ITech'
-import React from 'react'
-import { TechProps } from './Tech.props'
-import styles from './Tech.module.scss'
 import { Htag, Paragraph } from '@/app/ui'
-import { TechItem } from './TechItem/TechItem'
 import { motion } from 'framer-motion'
+import styles from './Tech.module.scss'
+import { TechProps } from './Tech.props'
+import { TechItem } from './TechItem/TechItem'
 
 export const Tech = ({ technologies }: TechProps): JSX.Element => {
 	const container = {

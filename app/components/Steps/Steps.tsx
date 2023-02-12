@@ -1,7 +1,6 @@
 import { ISteps } from '@/app/interfaces/ISteps'
 import { Htag, Paragraph } from '@/app/ui'
 import { motion } from 'framer-motion'
-import React from 'react'
 import styles from './Steps.module.scss'
 import { StepsProps } from './Steps.props'
 

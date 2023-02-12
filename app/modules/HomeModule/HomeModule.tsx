@@ -1,18 +1,17 @@
-import React from 'react'
-import { Meta } from '../../ui'
-import { IData } from '../../interfaces/IData'
-import styles from './Home.module.scss'
 import {
 	AboutUs,
+	ContactUs,
+	FAQs,
 	Footer,
 	Gallery,
-	Steps,
-	Tech,
-	FAQs,
-	ContactUs,
 	HeroBlock,
-	Review
+	Review,
+	Steps,
+	Tech
 } from '@/app/components'
+import { IData } from '../../interfaces/IData'
+import { Meta } from '../../ui'
+import styles from './Home.module.scss'
 
 const HomeModule = ({
 	links,

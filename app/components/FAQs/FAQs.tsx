@@ -1,10 +1,9 @@
-import { Htag, Paragraph } from '@/app/ui'
-import React from 'react'
-import { FAQsProps } from './FAQs.props'
-import styles from './FAQs.module.scss'
 import { ISteps } from '@/app/interfaces/ISteps'
-import { FAQ } from './FAQ/FAQ'
+import { Htag, Paragraph } from '@/app/ui'
 import { motion } from 'framer-motion'
+import { FAQ } from './FAQ/FAQ'
+import styles from './FAQs.module.scss'
+import { FAQsProps } from './FAQs.props'
 
 export const FAQs = ({ faqs }: FAQsProps): JSX.Element => {
 	const container = {

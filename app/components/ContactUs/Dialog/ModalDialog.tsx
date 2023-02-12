@@ -1,8 +1,8 @@
-import { Transition, Dialog } from '@headlessui/react'
-import React, { Fragment } from 'react'
-import { DialogProps } from './ModalDialog.props'
-import styles from './ModalDialog.module.scss'
 import { Button, Htag, Paragraph } from '@/app/ui'
+import { Dialog, Transition } from '@headlessui/react'
+import { Fragment } from 'react'
+import styles from './ModalDialog.module.scss'
+import { DialogProps } from './ModalDialog.props'
 
 export const ModalDialog = ({
 	isOpen,

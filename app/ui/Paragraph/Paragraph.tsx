@@ -1,7 +1,6 @@
-import React from 'react'
-import { ParagraphProps } from './Paragraph.props'
 import cn from 'classnames'
 import styles from './Paragraph.module.scss'
+import { ParagraphProps } from './Paragraph.props'
 
 export const Paragraph = ({
 	size = 'm',
